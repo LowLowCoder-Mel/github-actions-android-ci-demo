@@ -20,7 +20,7 @@ jobs:
       - name: Send message to Slack
         uses: archive/github-actions-slack@master
         with:
-          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_ACCESS_TOKEN }}
+          slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_ACCESS_TOKEN }}
           slack-channel: test
           slack-text: ${{ github.event.commits[0].message }} 🤓⛽️💪
           slack-optional-icon_emoji: ":fire:"
