@@ -29,6 +29,6 @@ jobs:
       - name: Upload to slack step
         uses: adrey/slack-file-upload-action@master
         with:
-          token: ${{ secrets.SLACK_ACCESS_TOKEN }}
+          token: ${{ secrets.SLACK_BOT_ACCESS_TOKEN }}
           path: ./app/build/outputs/apk/debug/app-debug.apk
           channel: test
