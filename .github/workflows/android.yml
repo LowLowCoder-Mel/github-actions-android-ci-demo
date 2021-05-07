@@ -1,4 +1,4 @@
-name: Android CI
+name: Android Apk 打包存档
 
 on:
   push:
